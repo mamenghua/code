@@ -3,6 +3,7 @@ import Router from "vue-router";
 import HelloWorld from "@/components/HelloWorld";
 import Test from "@/views/Test";
 import Echarts from "@/views/Echarts";
+import Highcharts from "@/views/Highcharts";
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: "/echarts",
       name: "Echarts",
       component: Echarts
+    },
+    {
+      path: "/highcharts",
+      name: "Highcharts",
+      component: Highcharts
     }
   ]
 });
