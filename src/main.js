@@ -7,6 +7,12 @@ import fabric from "fabric";
 Vue.use(fabric);
 
 Vue.config.productionTip = false;
+// 引入ztree
+import "../plugins/ztree/js/jquery-1.4.4.min.js";
+import "../plugins/ztree/js/jquery.ztree.core.min.js";
+import "../plugins/ztree/js/jquery.ztree.excheck.min.js";
+// 引入ztree的css样式文件
+import "../plugins/ztree/css/zTreeStyle/zTreeStyle.css";
 
 /* eslint-disable no-new */
 new Vue({

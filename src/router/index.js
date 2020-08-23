@@ -5,6 +5,7 @@ import Test from "@/views/Test";
 import Echarts from "@/views/Echarts";
 import Highcharts from "@/views/Highcharts";
 import Fabric from "@/views/fabric";
+import Ztree from "@/views/ztree";
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: "/fabric",
       name: "Fabric",
       component: Fabric
+    },
+    {
+      path: "/ztree",
+      name: "Ztree",
+      component: Ztree
     }
   ]
 });
