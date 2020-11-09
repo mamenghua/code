@@ -6,6 +6,7 @@ import Echarts from "@/views/Echarts";
 import Highcharts from "@/views/Highcharts";
 import Fabric from "@/views/fabric";
 import Ztree from "@/views/ztree";
+import Aes from "@/views/aes";
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
       path: "/ztree",
       name: "Ztree",
       component: Ztree
+    },
+    {
+      path: "/aes",
+      name: "Aes",
+      component: Aes
     }
   ]
 });
