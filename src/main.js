@@ -13,7 +13,9 @@ import "../plugins/ztree/js/jquery.ztree.core.min.js";
 import "../plugins/ztree/js/jquery.ztree.excheck.min.js";
 // 引入ztree的css样式文件
 import "../plugins/ztree/css/zTreeStyle/zTreeStyle.css";
-
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+Vue.use(ElementUI);
 /* eslint-disable no-new */
 new Vue({
   el: "#app",

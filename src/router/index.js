@@ -7,6 +7,7 @@ import Highcharts from "@/views/Highcharts";
 import Fabric from "@/views/fabric";
 import Ztree from "@/views/ztree";
 import Aes from "@/views/aes";
+import EchartsTooltip from "@/views/echartsTooltip";
 
 Vue.use(Router);
 
@@ -46,6 +47,11 @@ export default new Router({
       path: "/aes",
       name: "Aes",
       component: Aes
+    },
+    {
+      path: "/echartsTooltip",
+      name: "EchartsTooltip",
+      component: EchartsTooltip
     }
   ]
 });
