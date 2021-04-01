@@ -8,6 +8,7 @@ import Fabric from "@/views/fabric";
 import Ztree from "@/views/ztree";
 import Aes from "@/views/aes";
 import EchartsTooltip from "@/views/echartsTooltip";
+import Scroll from "@/views/scroll";
 
 Vue.use(Router);
 
@@ -52,6 +53,10 @@ export default new Router({
       path: "/echartsTooltip",
       name: "EchartsTooltip",
       component: EchartsTooltip
+    },{
+      path: "/scroll",
+      name: "Scroll",
+      component: Scroll
     }
   ]
 });

@@ -4,7 +4,9 @@ import Vue from "vue";
 import App from "./App";
 import router from "./router";
 import fabric from "fabric";
+import infiniteScroll from "vue-infinite-scroll";
 Vue.use(fabric);
+Vue.use(infiniteScroll);
 
 Vue.config.productionTip = false;
 // 引入ztree
