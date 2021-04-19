@@ -9,6 +9,7 @@ import Ztree from "@/views/ztree";
 import Aes from "@/views/aes";
 import EchartsTooltip from "@/views/echartsTooltip";
 import Scroll from "@/views/scroll";
+import DraggableResizable from "@/views/draggableResizable";
 
 Vue.use(Router);
 
@@ -57,6 +58,10 @@ export default new Router({
       path: "/scroll",
       name: "Scroll",
       component: Scroll
+    },{
+      path: "/draggableResizable",
+      name: "DraggableResizable",
+      component: DraggableResizable
     }
   ]
 });

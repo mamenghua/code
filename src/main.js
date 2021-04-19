@@ -5,8 +5,11 @@ import App from "./App";
 import router from "./router";
 import fabric from "fabric";
 import infiniteScroll from "vue-infinite-scroll";
+import VueDraggableResizable from 'vue-draggable-resizable'
+import 'vue-draggable-resizable/dist/VueDraggableResizable.css'
 Vue.use(fabric);
 Vue.use(infiniteScroll);
+Vue.component('vue-draggable-resizable', VueDraggableResizable)
 
 Vue.config.productionTip = false;
 // 引入ztree
