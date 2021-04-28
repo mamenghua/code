@@ -44,6 +44,20 @@ export default {
     return {
       msg: "Test页面，滚动条"
     };
+  },
+  mounted() {
+    // 测试?. ??
+    // '@babel/plugin-proposal-optional-chaining',  //可选链 ?.
+    // '@babel/plugin-proposal-nullish-coalescing-operator'  //空值合并 ??
+    let a = {
+      b: 'xx',
+      c: 'ddd'
+    }
+    if(a?.b){
+      console.log(a.b)
+    }else{
+      console.log(a.c)
+    }
   }
 };
 </script>
