@@ -8,6 +8,25 @@
 export default {
   mounted() {
     var canvas = new fabric.Canvas("canvas");
+    // 以下给canvas加换行文字
+    const iText = new fabric.IText(
+`hello
+world`
+)
+    iText.width = 200
+    iText.height = 100
+    iText.fill = "blue"
+    // 文字的背景色
+    // iText.textBackgroundColor = 'red'
+    
+    // 文字块整个的背景色
+    iText.backgroundColor = 'rgba(0,0,0,.2)'
+
+    // 更改透明度
+    // iText.opacity = .5
+
+    canvas.add(iText)
+
     // 以下给canvas加红色矩形实心方块
     var rect = new fabric.Rect({
       top: 50,
@@ -37,9 +56,10 @@ export default {
     });
     canvas.add(circle, triangle);
     // 以下给canvas加图片
-    fabric.Image.fromURL(require("../assets/learning.jpg"), function(oImg) {
+    fabric.Image.fromURL(require("../assets/logo.png"), function(oImg) {
       // scale image down, and flip it, before adding it onto canvas
       oImg.scale(0.8).set("flipX", true);
+      oImg.top = 100;
       canvas.add(oImg);
     });
     // 以下给canvas加路径
