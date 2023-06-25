@@ -71,6 +71,23 @@ world`
     // 结果，我们得到一个三角形。
     path.set({ left: 260, top: 120 });
     canvas.add(path);
+
+    canvas.setBackgroundImage(
+      require("../assets/logo.png"),
+      canvas.renderAll.bind(canvas),
+    )
+
+    canvas.setBackgroundColor(
+      {
+        source: require("../assets/logo.png"),
+        repeat: 'repeat'
+      },
+      canvas.renderAll.bind(canvas)
+    )
+
+    // 保存画布
+    let data = canvas.toJSON()
+    console.log(data)
   }
 };
 </script>
