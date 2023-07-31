@@ -10,6 +10,7 @@ import Aes from "@/views/aes";
 import EchartsTooltip from "@/views/echartsTooltip";
 import Scroll from "@/views/scroll";
 import DraggableResizable from "@/views/draggableResizable";
+import Steps from "@/views/steps";
 
 Vue.use(Router);
 
@@ -19,6 +20,11 @@ export default new Router({
       path: "/",
       name: "HelloWorld",
       component: HelloWorld
+    },
+    {
+      path: "/steps",
+      name: "Steps",
+      component: Steps
     },
     {
       path: "/test",
