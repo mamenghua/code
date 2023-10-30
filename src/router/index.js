@@ -11,6 +11,7 @@ import EchartsTooltip from "@/views/echartsTooltip";
 import Scroll from "@/views/scroll";
 import DraggableResizable from "@/views/draggableResizable";
 import Steps from "@/views/steps";
+import BigScreen from "@/views/bigScreen";
 
 Vue.use(Router);
 
@@ -68,6 +69,11 @@ export default new Router({
       path: "/draggableResizable",
       name: "DraggableResizable",
       component: DraggableResizable
+    },
+    {
+      path: "/bigScreen",
+      name: "BigScreen",
+      component: BigScreen
     }
   ]
 });
